@@ -3,7 +3,7 @@
 Personal portfolio website built with HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo
-Visit: [https://YOUR_USERNAME.github.io/YOUR_REPO_NAME](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME)
+Visit: [https://hd-muhammad.github.io/Muhammad_Hadi_PORTO/](https://hd-muhammad.github.io/Muhammad_Hadi_PORTO/)
 
 ## ✨ Features
 - BSSN-inspired color theme (Dark Blue + Gold)
@@ -28,7 +28,7 @@ git push -u origin main
 5. Select `main` branch and `/ (root)` folder
 6. Click **Save**
 
-Your site will be live at `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME`
+Your site will be live at `https://hd-muhammad.github.io/Muhammad_Hadi_PORTO/`
 
 ## 📁 Project Structure
 ```
