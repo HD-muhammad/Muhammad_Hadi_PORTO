@@ -1,0 +1,12 @@
+# Docker files (not needed for GitHub Pages)
+Dockerfile
+docker-compose.yml
+nginx.conf
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
