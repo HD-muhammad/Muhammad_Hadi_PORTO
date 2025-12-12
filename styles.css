@@ -726,6 +726,201 @@ section {
     margin-top: 5px;
 }
 
+/* Education */
+.education {
+    background: var(--primary-blue);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent-gold) 0%, rgba(201, 162, 39, 0.2) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-gold);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-dark);
+    font-size: 1rem;
+    box-shadow: var(--shadow-gold);
+    z-index: 1;
+}
+
+.timeline-content {
+    background: var(--gradient-card);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    transition: var(--transition-normal);
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: rgba(201, 162, 39, 0.4);
+    box-shadow: var(--shadow-gold);
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.timeline-date {
+    padding: 5px 15px;
+    background: rgba(201, 162, 39, 0.1);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: 20px;
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.timeline-subtitle {
+    color: var(--accent-cyan);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.timeline-description {
+    color: var(--gray-400);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.timeline-tags span {
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    color: var(--gray-400);
+    font-size: 0.75rem;
+}
+
+/* Certifications */
+.certifications {
+    background: linear-gradient(180deg, var(--primary-blue) 0%, var(--primary-light) 100%);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background: var(--gradient-card);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    transition: var(--transition-normal);
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(201, 162, 39, 0.4);
+    box-shadow: var(--shadow-gold);
+}
+
+.cert-badge {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--white);
+    flex-shrink: 0;
+}
+
+.cert-badge.ceh {
+    background: linear-gradient(135deg, #EF4444 0%, #B91C1C 100%);
+}
+
+.cert-content h3 {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    color: var(--accent-gold);
+    margin-bottom: 5px;
+}
+
+.cert-full-name {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.cert-issuer {
+    color: var(--gray-400);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.cert-verify {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #10B981;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.cert-verify i {
+    font-size: 1rem;
+}
+
 /* Skills */
 .skills {
     background: var(--primary-blue);
@@ -1274,6 +1469,29 @@ section {
 
     .contact-form {
         padding: 25px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline {
+        padding-left: 40px;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-marker {
+        left: -40px;
+        width: 35px;
+        height: 35px;
     }
 }
 
